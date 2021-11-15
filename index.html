@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
             integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -53,7 +54,7 @@
         <section class="hero-section">  
             <div class="hero-container container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-btn" type="button">Заказать услугу</button>
+                <button class="hero-btn" data-modal-open type="button">Заказать услугу</button>
             </div>
         </section>
         <!-- --------------------------------------Преимущества--------------------------------------- -->
@@ -124,14 +125,17 @@
                 <li class="gallery-item">
                     <img class="gallery-link link" src="./Images/stady1.jpg" alt="Разрабатываем программное обеспечение"
                         width="370" height="294">
+                        <p class="visually-text">Десктопные приложения</p>
                 </li>
                 <li class="gallery-item">
                     <img class="gallery-link link" src="./Images/stady2.jpg"
                         alt="Адаптируем програмное обеспечение под мобильные телефоны" width="370" height="294">
+                        <p class="visually-text">Мобильные приложения</p>
                 </li>
                 <li class="gallery-item">
                     <img class="gallery-link link" src="./Images/stady3.jpg" alt="Тестируем программное обеспечение"
                         width="370" height="294">
+                        <p class="visually-text">Дизайнерские решения</p>
                 </li>
             </ul>
             </div>
@@ -389,8 +393,17 @@
             </div>
             </div>
            
-        </footer>        
+        </footer> 
+        <div class="backdrop is-hidden" data-modal>
+<div class="modal">
+    <button type="button" class="modal-btn" data-modal-close>
+        <svg class="modal-close-icon" width="11" height="11">
+        <use href="./Images/sprite-2.svg#icon-close"></use>
+    </svg>
+</button>
+</div>
+        </div>       
     </main>
 </body>
-
+<script src="./js/modal.js"></script>
 </html>
