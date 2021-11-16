@@ -260,6 +260,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: left;
+  background-color: rgba(245, 244, 250, 1);
 }
 
 .after-hero-link {
@@ -269,6 +270,7 @@ body {
   display: flex;
   width: 270px;
   height: 120px;
+  background-color: #f5f4fa;
 }
 
 .hero-list {
@@ -495,7 +497,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100px;
+  height: 100%;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
