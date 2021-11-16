@@ -78,6 +78,11 @@ body {
 .nav-link {
   display: block;
   padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.current {
+  padding-bottom: 0px;
 }
 
 .nav-menu .nav-item + .nav-item {
